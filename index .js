@@ -167,7 +167,6 @@ while(n>0){
 }
 console.log(reverse)
 //-----------------------------------------------------------------------------------------------------------------------
-Write a javascript program to calculate product of digits of a number.
 Write a javascript program to enter a number and print its reverse.
 n=987651234
 reverse=0
@@ -242,12 +241,109 @@ for(i=0;i<=n;i++){
      console.log('notprime')
  }
   
-Write a javascript program to print all Prime numbers between 1 to n.
+// Write a javascript program to print all Prime numbers between 1 to n.
+let n=100
+let outputarr=[];
+for(let i=2;i<n;i++){
+    isprime=true;
+    for( let j=2;j<i;j++){
+        if(j%i ==0){
+          isprime=false;
+          break;
+        }
+         
+         }
+         if(isprime){
+           outputarr.push(i)  
+    }
+}
+console.log(outputarr)
+// =========================================================================================================================================
 Write a javascript program to find sum of all prime numbers between 1 to n.
+let n=100
+let outputarr=[];
+sum=0
+for(let i=2;i<n;i++){
+    isprime=true;
+    for( let j=2;j<i;j++){
+        if(j%i ==0){
+          isprime=false;
+          break;
+        }
+         
+         }
+         if(isprime){
+             sum=sum+i
+           outputarr.push(i)  
+    }
+}
+console.log(sum)
+console.log(outputarr)
+// ===============================================================================================================================
 Write a javascript program to find all prime factors of a number.
+n=199
+givennum= n.toString()
+len = givennum.length
+arr=givennum.split("").map(Number)
+sum=0
+for(i=0;i<arr.length;i++){
+mulvalue=1
+for(j=0;j<len;j++){
+   mulvalue= mulvalue*arr[i]
+   
+}
+    sum= sum+mulvalue
+}
+console.log(sum)
+// ==============================================================================================================================================
 Write a javascript program to check whether a number is Armstrong number or not.
+num=153
+sum=0
+temp=num
+while(temp>0){
+    rem= temp%10
+    sum += rem*rem*rem
+    temp=parseInt(temp/10)
+}
+if(sum==num){
+    console.log("amstront number ",num)
+}else{
+    console.log("not amstrong")
+}
+    
 Write a javascript program to print all Armstrong numbers between 1 to n.
+n=1000
+for(i=1;i<=n;i++){
+    num= i.toString().length
+    sum=0
+    temp=i
+    while(temp>0){
+        rem=temp%10
+        sum+=rem**num
+        temp= parseInt(temp/10)
+    }
+    if (sum == i) {
+        console.log(i);
+}
+}
+// ===================================================================================
 Write a javascript program to check whether a number is Perfect number or not.
+n =28
+sum = 0
+for(i=1;i<n;i++){
+if(n%i ==0){
+    sum+=i
+}
+}
+console.log(sum)
+
+if(sum==n){
+ console.log("true")
+    
+}else{
+    console.log("false")
+}
+// =======================================================================================================================
 Write a javascript program to print all Perfect numbers between 1 to n.
 Write a javascript program to check whether a number is Strong number or not.
 Write a javascript program to print all Strong numbers between 1 to n.
