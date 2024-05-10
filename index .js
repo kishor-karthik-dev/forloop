@@ -279,6 +279,19 @@ for(let i=2;i<n;i++){
 }
 console.log(sum)
 console.log(outputarr)
+ ===============================================================================================================
+ for(i=2;i<=100;i++){
+//     count=0
+//     for(j=0;j<=i;j++){
+//       if(i%j==0) 
+//       count+=1
+//     }  
+//     if(count<=2){
+//       console.log("prime",i) 
+//     }else{
+//         console.log("notprime",i)
+//     }
+// }
 // ===============================================================================================================================
 Write a javascript program to find all prime factors of a number.
 n=199
